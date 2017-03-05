@@ -14,10 +14,10 @@ REST.prototype.connectMysql = function() {
     var self = this;
     var pool      =    mysql.createPool({
         connectionLimit : 100,
-        host     : 'localhost',
-        user     : 'root',
-        password : '',
-        database : 'restful_api_demo',
+        host     : 'us-cdbr-iron-east-04.cleardb.net',
+        user     : 'b6ebb0a0297b9e',
+        password : '6b01aea1',
+        database : 'heroku_ebfed75d99e67f4',
         debug    :  false
     });
     pool.getConnection(function(err,connection){
@@ -40,7 +40,7 @@ REST.prototype.configureExpress = function(connection) {
 }
 
 REST.prototype.startServer = function() {
-      app.listen(3800,function(){
+      app.listen(process.env.PORT || 3200,function(){
           console.log("All right ! I am alive at Port 3800.");
       });
 }
