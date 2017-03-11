@@ -23,7 +23,7 @@ REST.prototype.connectMysql = function() {
         port     : '3306',
         user     : 'omega',
         password : 'omega1234',
-        database : 'restful_api_demo',
+        database : 'omega',
         debug    :  false
     });
     pool.getConnection(function(err,connection){
