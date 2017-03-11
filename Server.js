@@ -14,10 +14,11 @@ REST.prototype.connectMysql = function() {
     var self = this;
     var pool      =    mysql.createPool({
         connectionLimit : 100,
-        host     : 'us-cdbr-iron-east-04.cleardb.net',
-        user     : 'b6ebb0a0297b9e',
-        password : '6b01aea1',
-        database : 'heroku_ebfed75d99e67f4',
+        host     : 'omega-db.chhua1e87azu.us-east-1.rds.amazonaws.com',
+        port     : '3306',
+        user     : 'omega',
+        password : 'omega1234',
+        database : 'omega',
         debug    :  false
     });
     pool.getConnection(function(err,connection){
