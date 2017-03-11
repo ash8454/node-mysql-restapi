@@ -19,11 +19,11 @@ REST.prototype.connectMysql = function() {
         // password : '',
         // database : 'restful_api_demo',
         // debug    :  false
-        host     : 'omega-db.chhua1e87azu.us-east-1.rds.amazonaws.com',
+        host     : 'us-cdbr-iron-east-04.cleardb.net',
         port     : '3306',
-        user     : 'omega',
-        password : 'omega1234',
-        database : 'omega',
+        user     : 'b6ebb0a0297b9e',
+        password : '6b01aea1',
+        database : 'restful_api_demo',
         debug    :  false
     });
     pool.getConnection(function(err,connection){
