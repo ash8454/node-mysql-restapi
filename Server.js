@@ -23,7 +23,7 @@ REST.prototype.connectMysql = function() {
         port     : '3306',
         user     : 'b6ebb0a0297b9e',
         password : '6b01aea1',
-        database : 'restful_api_demo',
+        database : 'heroku_ebfed75d99e67f4',
         debug    :  false
     });
     pool.getConnection(function(err,connection){
