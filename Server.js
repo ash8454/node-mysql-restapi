@@ -5,6 +5,8 @@ var md5 = require('MD5');
 var rest = require("./REST.js");
 var app  = express();
 
+const port = process.env.PORT || 3800;
+
 function REST(){
     var self = this;
     self.connectMysql();
@@ -46,8 +48,8 @@ REST.prototype.configureExpress = function(connection) {
 }
 
 REST.prototype.startServer = function() {
-      app.listen(3800,function(){
-          console.log("All right ! I am alive at Port 3800.");
+      app.listen(port,function(){
+          console.log(`All right ! I am alive at Port ${port}.`);
       });
 }
 
